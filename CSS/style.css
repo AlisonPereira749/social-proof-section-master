@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+
+:root {
+    --font-01: 'Poppins', sans-serif;
+    
+    --p-Magenta-muito-escuro: hsl(300, 43%, 27%);
+    --p-Rosa-Suave: hsl(333, 80%, 67%);
+    --n-Magenta-acinzentado: hsl(300, 14%, 23%);
+    --n-Magenta-acinzentado-claro: hsl(300, 24%, 96%);
+    --n-Branco:hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-01);
+}
+
+body {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    max-width: 1072px;
+    margin: 30px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    line-height: 35px;
+}
+
+.left p {
+    font-size: 14px;
+    color: var(--n-Magenta-acinzentado);
+    padding-top: 15px;
+}
+
+/* ---RIGHT--- */
+.right {
+    max-width: 410px;
+}
+
+.right .star-box {
+    width: 350px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: var(--n-Magenta-acinzentado-claro);
+}
+
+.right .star-box p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.right .avl-01 {
+    margin-left: 30px;
+}
+.right .avl-02 {
+    margin-left: 60px;
+}
+
+.right .star-box .ultimo-ico {
+    margin-right: 10px;
+}
+
+/* CARDS DA DIV INFERIOR */
+.cards {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards .box-perfil {
+    max-width: 350px;
+    background-color: var(--p-Magenta-muito-escuro);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.box-perfil .infor-user {
+    display: flex;
+    margin: 25px 0;
+}
+
+.box-perfil p {
+    color: var(--n-Branco);
+    font-size: 14px;
+}
+/*----- CONFIG. DAS FOTOS DO USUÁRIOS ----*/
+.box-perfil .infor-user .foto-user-colton {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/image-colton.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-perfil .infor-user .foto-user-irene {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/image-irene.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-perfil .infor-user .foto-user-anne {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/image-anne.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* CONFIG. NOME DE USUÁRIO */
+.infor-user .user-name {
+    padding-left: 15px;
+}
+
+.infor-user .user-name h3 {
+    color: var(--n-Branco);
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.infor-user .user-name h5 {
+    color: var(--p-Rosa-Suave);
+    font-weight: normal;
+    font-size: 0.8rem;
+}

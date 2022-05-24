@@ -1,0 +1,24 @@
+/* topo da página */
+.left {
+    margin: auto;
+    text-align: center;
+}
+
+.left h1 {
+    font-size: 1.7rem;
+}
+
+.left p {
+    
+}
+
+/* Box de avaliações */
+.right {
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Depoimentos */
+.cards .box-perfil.box-end {
+    margin-bottom: 40px;
+}
